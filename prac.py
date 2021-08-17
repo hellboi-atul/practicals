@@ -5,7 +5,7 @@ def animation(x):
         print("Ok generating programe to find the radius and circumference of a circle..")
     else:
         print("Ok generating programe to check whether a number is even or odd..")
-    for _ in range(3):
+    for _ in range(5):
         for frame in r"-\|/-\|/":
             print("\b", frame, sep="", end="", flush=True)
             sleep(0.1)
