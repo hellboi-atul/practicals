@@ -35,6 +35,8 @@ def circle(radius):
     return circum, area
     clear_screen()
 radius = int(input("Enter the radius: "))
+x,y = circle(radius)
+print("circumference =", x,",","Area =", y)
 
 
 
@@ -44,6 +46,7 @@ def add(x,y):
     return s
 x = int (input("Enter the first number: "))
 y = int(input("Enter the second number: "))
+print("Sum of those numbers are: ", add(x,y))
 
 
 
@@ -62,9 +65,9 @@ def main():
         print(e)
         exit(0)
     if choice == 1:
-        print(circle(radius))
+        circle(radius)
     elif choice == 2:
-        print(add(x,y))
+        add(x,y)
     else:
         print("Lean English.")
         x = input("Run again? (y/n)")
