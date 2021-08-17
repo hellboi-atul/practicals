@@ -37,7 +37,7 @@ k = circle(radius)
 print(k)
 
 
-def add():
+def add(x,y):
     clear_screen()
     s = x+y
     return s
