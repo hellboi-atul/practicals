@@ -28,7 +28,6 @@ def circle(radius):
         animation ("circle")
     except NameError: # No such error will happen btw😅.
         print("Processing..")
-    clear_screen()
     circum = 2*3.14*radius
     area= 2*3.14*radius**2
     return circum, area
@@ -41,9 +40,6 @@ def add(x,y):
     return s
 x = int (input("Enter the first number: "))
 y = int(input("Enter the second number: "))
-sum = add(x,y)
-print("Sum of two given numbers is", sum)
-exit(0)
 
 
     
