@@ -1,5 +1,4 @@
 from time import sleep
-import os
 
 def animation(x):
     if x == "circle":
@@ -12,6 +11,7 @@ def animation(x):
             sleep(100)
 
 
+import os
 def clear_screen():
     # https://www.tutorialspoint.com/how-to-clear-screen-in-python#:~:text=In%20Python%20sometimes%20we%20have,screen%20by%20pressing%20Control%20%2B%20l%20.
     if os.name == "posix":
