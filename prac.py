@@ -33,8 +33,6 @@ def circle(radius):
     area= 2*3.14*radius**2
     return circum, area
 radius = int(input("Enter the radius: "))
-k = circle(radius)
-print(k)
 
 
 def add(x,y):
