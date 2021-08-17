@@ -22,6 +22,7 @@ def clear_screen():
 
 
 def circle():
+    clear_screen()
     try:
         animation ("circle")
     except NameError: # No such error will happen btw😅.
