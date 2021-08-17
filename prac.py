@@ -1,4 +1,5 @@
 from time import sleep
+import os
 
 def animation(x):
     if x == "circle":
