@@ -19,14 +19,7 @@ def clear_screen():
         # for windows platfrom
         os.system("cls")
 
-def get_radius ():
-    print("Here's the programe to find the radius and circumference of a circle")
-    try:
-        radius = int(input("Enter the radius of the circle"))
-    except ValueError:
-        print("Radius must be an integer")
-        exit(0)
-    return radius
+
 
 def circle():
     try:
@@ -37,24 +30,17 @@ def circle():
     circum = 2*3.14*radius
     area= 2*3.14*radius**2
     return circum, area
-radius = get_radius()
+radius = int(input("Enter the radius: "))
 k = circle(radius)
 print(k)
 
-def numbers ():
-    print("Here's the programe to find the sum of 2 numbers..")
-    try:
-        x = int(input("Enter the first number: "))
-        y = int(input("Enter the second number: "))
-    except ValueError:
-        print("Numbers must be integer")
-        exit(0)
-    return x,y
 
 def add():
+    clear_screen()
     s = x+y
     return s
-x,y = numbers()
+x = int (input("Enter the first number: "))
+y = int(input("Enter the second number: "))
 sum = add(x,y)
 print("Sum of two given numbers is", sum)
 exit(0)
