@@ -21,7 +21,7 @@ def clear_screen():
 
 
 
-def circle():
+def circle(radius):
     clear_screen()
     animation()
     try:
