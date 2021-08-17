@@ -1,3 +1,5 @@
+from time import sleep
+
 def animation(x):
     if x == "circle":
         print("Ok generating programe to find the radius and circumference of a circle..")
