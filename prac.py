@@ -22,7 +22,7 @@ def clear_screen():
         # for windows platfrom
         os.system("cls")
 
-main ()
+
 
 def circle(radius):
     clear_screen()
@@ -34,8 +34,6 @@ def circle(radius):
     area= 2*3.14*radius**2
     return circum, area
 radius = int(input("Enter the radius: "))
-x,y = circle(radius)
-print("circum =", x,",","Area =", y)
 
 
 
@@ -45,7 +43,7 @@ def add(x,y):
     return s
 x = int (input("Enter the first number: "))
 y = int(input("Enter the second number: "))
-print("Sum of those numbers are: ", add(x,y))
+
 
 
 
@@ -63,9 +61,9 @@ def main():
         print(e)
         exit(0)
     if choice == 1:
-        circle()
+        circle(radius)
     elif choice == 2:
-        add()
+        add(x,y)
     else:
         print("Lean English.")
         x = input("Run again? (y/n)")
@@ -76,5 +74,5 @@ def main():
 
 
 
-
+main()
 
