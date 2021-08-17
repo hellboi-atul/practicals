@@ -4,11 +4,11 @@ from time import sleep
 
 def animation(x):
     if x == "circle":
-        print("Ok generating programe to find the radius and circumference of a circle..")
+        print("Ok generating programe to find the area and circumference of a circle..")
     else:
         print("Ok generating programe to check whether a number is even or odd..")
     for _ in range(3):
-        for frame in r"-\|/-\|/":
+        for frame in r"-\|/-\|/-":
             print("\b", frame, sep="", end="", flush=True)
             sleep(0.3)
 
