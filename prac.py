@@ -33,6 +33,7 @@ def circle(radius):
     circum = 2*3.14*radius
     area= 2*3.14*radius**2
     return circum, area
+    clear_screen()
 radius = int(input("Enter the radius: "))
 
 
