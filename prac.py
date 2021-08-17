@@ -7,7 +7,7 @@ def animation(x):
         print("Ok generating programe to find the radius and circumference of a circle..")
     else:
         print("Ok generating programe to check whether a number is even or odd..")
-    for _ in range(5):
+    for _ in range(3):
         for frame in r"-\|/-\|/":
             print("\b", frame, sep="", end="", flush=True)
             sleep(0.3)
@@ -61,9 +61,9 @@ def main():
         print(e)
         exit(0)
     if choice == 1:
-        circle(radius)
+        print(circle(radius))
     elif choice == 2:
-        add(x,y)
+        print(add(x,y))
     else:
         print("Lean English.")
         x = input("Run again? (y/n)")
