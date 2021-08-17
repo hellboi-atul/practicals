@@ -20,28 +20,6 @@ def clear_screen():
         # for windows platfrom
         os.system("cls")
 
-
-
-def circle(radius):
-    clear_screen()
-    try:
-        animation ("circle")
-    except NameError: # No such error will happen btw😅.
-        print("Processing..")
-    circum = 2*3.14*radius
-    area= 2*3.14*radius**2
-    return circum, area
-radius = int(input("Enter the radius: "))
-
-
-def add(x,y):
-    clear_screen()
-    s = x+y
-    return s
-x = int (input("Enter the first number: "))
-y = int(input("Enter the second number: "))
-
-
     
 def main():
     clear_screen()
@@ -69,3 +47,28 @@ def main():
 
 
 main()
+
+
+def circle(radius):
+    clear_screen()
+    try:
+        animation ("circle")
+    except NameError: # No such error will happen btw😅.
+        print("Processing..")
+    circum = 2*3.14*radius
+    area= 2*3.14*radius**2
+    return circum, area
+radius = int(input("Enter the radius: "))
+x,y = circle(radius)
+print("circum =", x,",","Area =", y)
+
+
+
+def add(x,y):
+    clear_screen()
+    s = x+y
+    return s
+x = int (input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+print("Sum of those numbers are: ", add(x,y))
+
