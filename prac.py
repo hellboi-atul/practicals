@@ -8,7 +8,7 @@ def animation(x):
     for _ in range(5):
         for frame in r"-\|/-\|/":
             print("\b", frame, sep="", end="", flush=True)
-            sleep(100)
+            sleep(0.3)
 
 
 import os
