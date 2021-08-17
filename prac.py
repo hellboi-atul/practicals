@@ -65,9 +65,9 @@ def main():
         print(e)
         exit(0)
     if choice == 1:
-        circle(radius)
+        circle()
     elif choice == 2:
-        add(x,y)
+        add()
     else:
         print("Lean English.")
         x = input("Run again? (y/n)")
