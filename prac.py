@@ -28,7 +28,7 @@ def get_radius ():
         exit(0)
     return radius
 
-def circle():
+def circle(radius):
     try:
         animation ("circle")
     except NameError: # No such error will happen btw😅.
