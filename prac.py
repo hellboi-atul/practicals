@@ -41,7 +41,7 @@
 
 
     def add(x,y):
-        clear_screen()
+        #clear_screen()
         s = x+y
     return s
     x = int (input("Enter the first number: "))
