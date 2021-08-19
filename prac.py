@@ -78,11 +78,7 @@ def main():
         print("Sum of those numbers are: ", add(x,y))
     else:
         print("Learn English.")
-        x = input("Run again? (y/n)")
-        if x == "y":
-            main()
-        else:
-            exit(0)
+        restart()
 
 
 
