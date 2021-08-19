@@ -42,6 +42,14 @@ def add(x,y):
     #clear_screen()
     s = x+y
     return s
+
+
+def restart():
+    x = input("Run again? (y/n)")
+    if x == "y":
+        main()
+    else:
+        exit(0)
     
 
 
@@ -69,7 +77,7 @@ def main():
         y = int(input("Enter the second number: "))
         print("Sum of those numbers are: ", add(x,y))
     else:
-        print("Lean English.")
+        print("Learn English.")
         x = input("Run again? (y/n)")
         if x == "y":
             main()
