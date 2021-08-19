@@ -1,5 +1,5 @@
+import os
 from time import sleep
-
 
 
 def animation(x):
@@ -13,7 +13,6 @@ def animation(x):
             sleep(0.3)
 
 
-import os
 def clear_screen():
     # https://www.tutorialspoint.com/how-to-clear-screen-in-python#:~:text=In%20Python%20sometimes%20we%20have,screen%20by%20pressing%20Control%20%2B%20l%20.
     if os.name == "posix":
@@ -23,64 +22,46 @@ def clear_screen():
         os.system("cls")
 
 
-
 def circle(radius):
     clear_screen()
-    try:
-        animation ("circle")
-    except NameError: # No such error will happen btw😅.
-        print("Processing..")
-    circum = 2*3.14*radius
-    area= 2*3.14*radius**2
+    animation("circle")
+    circum = 2 * 3.14 * radius
+    area = 2 * 3.14 * radius ** 2
     return circum, area
-    clear_screen()
 
 
-
-
-def add(x,y):
-    #clear_screen()
-    s = x+y
-    return s
+def add(x, y):
+    return x + y
 
 
 def restart():
-    x = input("Run again? (y/n)")
+    x = input("Run again? (y/n) :  ")
     if x == "y":
         main()
     else:
-        exit(0)
-    
+        exit(1)
 
 
-
-
-    
 def main():
     clear_screen()
     print(" ")
-    try:
-        choice = int(
-            input(
-                "\nWhat do you want to do?\n1. Find the circumference and area of a circle.\n2. Add two numbers.\n\nEnter choice:  "
-            )
-        )
-    except Exception as e:
-        print(e)
-        exit(0)
-    if choice == 1:
-        radius = float(input("Enter the radius: "))
-        x,y = circle(radius)
-        print("circumference =", x,",","Area =", y)
-    elif choice == 2:
-        x = float(input("Enter the first number: "))
-        y = float(input("Enter the second number: "))
-        print("Sum of those numbers are: ", add(x,y))
+    choice = input(
+        "\nWhat do you want to do?\n1. Find the circumference and area of a circle.\n2. Add two numbers.\n\nEnter choice:  "
+    )
+    if choice == "1":
+        radius = int(input("Enter the radius: "))
+        x, y = circle(radius)
+        print("\n\ncircumference =", x, "\n", "Area =", y)
+        restart()
+    elif choice == "2":
+        x = int(input("Enter the first number: "))
+        y = int(input("Enter the second number: "))
+        print("\n\nSum of those numbers are: ", add(x, y))
+        restart()
     else:
         print("Learn English.")
+        sleep(0.5)
         restart()
 
 
-
 main()
-
