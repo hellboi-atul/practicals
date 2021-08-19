@@ -69,12 +69,12 @@ def main():
         print(e)
         exit(0)
     if choice == 1:
-        radius = int(input("Enter the radius: "))
+        radius = float(input("Enter the radius: "))
         x,y = circle(radius)
         print("circumference =", x,",","Area =", y)
     elif choice == 2:
-        x = int (input("Enter the first number: "))
-        y = int(input("Enter the second number: "))
+        x = float(input("Enter the first number: "))
+        y = float(input("Enter the second number: "))
         print("Sum of those numbers are: ", add(x,y))
     else:
         print("Learn English.")
