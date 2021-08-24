@@ -49,13 +49,13 @@ def main():
         "\nWhat do you want to do?\n1. Find the circumference and area of a circle.\n2. Add two numbers.\n\nEnter choice:  "
     )
     if choice == "1":
-        radius = int(input("Enter the radius: "))
+        radius = float(input("Enter the radius: "))
         x, y = circle(radius)
         print("\n\ncircumference =", x, "\n", "Area =", y)
         restart()
     elif choice == "2":
-        x = int(input("Enter the first number: "))
-        y = int(input("Enter the second number: "))
+        x = float(input("Enter the first number: "))
+        y = float(input("Enter the second number: "))
         print("\n\nSum of those numbers are: ", add(x, y))
         restart()
     else:
